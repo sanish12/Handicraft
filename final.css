@@ -1,0 +1,333 @@
+   
+    
+.navbar{
+    display: block;
+
+    background: #116466;
+    border: 1px solid red;
+    height:60%;
+    width: 100%;
+    background-image:url(https://static3.scirra.net/images/newstore/products/3367/sceenshot_3.png) ;
+    }
+.navbar-brand{
+    border:5px solid yellow;
+}
+/* Navigation Bar*/
+#navbarTogglerDemo02{ 
+ 
+    padding:10px;
+}
+
+@media (min-width:800px) {
+    #navbarTogglerDemo02{
+        margin-left:22vw; 
+    margin-right:20vw; 
+        
+    }
+}
+
+.navbar-nav {
+    padding-top: 4vh;
+}
+
+.navbar-nav li {
+    padding-right:2vw;
+    list-style: none;
+}
+.dropdown{
+    padding-top: 1vh;
+}
+.navbar-nav li .dropdown-menu{
+    background: #222;
+    padding: 20px;
+    width: 64vw;
+    font-size: 14px;
+}
+.navbar-nav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #fff;
+    position: relative;
+}
+.navbar-nav li a:hover {
+    color: #fff;
+    list-style: none;
+}
+
+.navbar-nav li a span:first-child:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-top: 2px solid #ff0;
+    border-left: 2px solid #ff0;
+    transition: .2s;
+    opacity: 0;
+}
+
+.navbar-nav li a span:first-child:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-top: 2px solid #ff0;
+    border-right: 2px solid #ff0;
+    transition: .2s;
+    opacity: 0;
+}
+
+.navbar-nav li a span:last-child:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-bottom: 2px solid #ff0;
+    border-left: 2px solid #ff0;
+    transition: .2s;
+    opacity: 0;
+}
+
+.navbar-nav li a span:last-child:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-bottom: 2px solid #ff0;
+    border-right: 2px solid #ff0;
+    transition: .2s;
+    opacity: 0;
+}
+
+.navbar-nav li a:hover span:first-child:before {
+    top: -10px;
+    left: -10px;
+    opacity: 1;
+}
+
+.navbar-nav li a:hover span:first-child:after {
+    top: -10px;
+    right: -10px;
+    opacity: 1;
+}
+
+.navbar-nav li a:hover span:last-child:before {
+    bottom: -10px;
+    left: -10px;
+    opacity: 1;
+}
+
+.navbar-nav li a:hover span:last-child:after {
+    bottom: -10px;
+    right: -10px;
+    opacity: 1;
+}
+
+    .search-field{
+        display: flex;
+        margin-top:0.4vh;
+        margin-bottom:0.6vh; 
+    }
+
+    /*Nav5gat56n Bar Ends*/
+
+/*B0ttons*/
+
+.button{
+    position: relative;
+    padding: 1em 1.5em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 13px;
+    margin: 1em 0.8em;
+    
+   
+  }
+  .type1{
+      color: #66FCF1;
+  }
+  .type1::after, .type1::before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 20%;
+        height: 20%;
+        border: 2px solid;
+        transition: all 0.6s ease;
+        border-radius: 2px; 
+  }
+  .type1::after{
+        bottom: 0;
+        right: 0;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color:#66FCF1;
+        border-right-color: #66FCF1;
+  }
+  .type1::before{
+        top: 0;
+        left: 0;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        border-top-color: #66FCF1;
+        border-left-color:#66FCF1;
+  
+    }
+  .type1:hover:after, .type1:hover:before{
+        width: 100%;
+        height: 100%;
+        
+  }   
+
+
+
+/*Product slider*/
+    .previous{
+        height: 25%; width: 4%;background: black; margin-top: 15%;
+    }
+    .next{
+        height: 25%; width: 4%;background: black; margin-top: 15%;
+    }
+
+
+    /*About*/
+    
+    .row-about{
+        background: #262626;
+        color: #eee;
+        height: 100%;
+        width:100%;
+    }
+    @media screen and (min-width: 768px)
+    {
+     .box-about{
+       
+        background:#262626;
+        box-sizing: 0.9375em;
+        transition:-5s;
+        overflow:hidden;
+    }
+    
+    .box-about p{
+        margin:0;
+        padding:0;
+        color:#fff;
+        font-size: 20px;
+        transition: .5s;
+        transition-delay: .5s;
+        transform: scale(.75);
+        text-justify: auto;
+        
+    }
+    .box-about:before{
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 0%;
+        top:0;
+        left:0;
+        border-top: 2px solid #ffff;
+        border-left:2px solid #ffff;
+        opacity:0;
+        transition: .5s;
+        box-sizing: border-box;
+    }
+    .box-about:after{
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 0%;
+        bottom:0;
+        right:0;
+        border-bottom: 2px solid #ffff;
+        border-right:2px solid #ffff;
+        opacity:0;
+        transition: .5s;
+        box-sizing: border-box;
+    }
+    .box-about:hover:before{
+        width: 100%;
+        height:100%;
+        opacity:1;
+    }
+    .box-about:hover:after{
+        width: 100%;
+        height:100%;
+        opacity:1;
+    }
+    .box-about:hover p{
+        transform: scale(0.85);
+    }
+    .box-about:hover{
+        box-shadow: 0 25px 30px rgba(0,0,0 .5);
+    }
+    .box-about span{
+        position: absolute;
+        top:0;
+        left:-120%;
+        width:100%;
+        height: 100%;
+        background: rgba(255,255,255,.5);
+        transition: .5s;
+        transition-delay: 1s;
+        transform: skewX(5deg);
+    } 
+    }
+    /* end of media */
+    .box-about:hover span{
+        left: 120%;
+    }
+        
+
+    /*C6ntact*/
+    .contact{
+        margin: 0;
+        padding:0;
+        font-family:arial;
+        background:#262626;
+        height: 100%;
+        }
+        .cont-sub{
+            margin-top: 2%;
+                width:90%;
+                list-style: none;
+            float: left;
+            text-align:center;
+            
+        }
+        .cont-sub a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .cont-sub a .fa{
+            font-size:4em;
+            transition:.5s;
+        }
+        .cont-sub a .text{
+            opacity:0;
+            transition: .5s;
+            transform: translateY(20px);
+        }
+        .cont-sub :hover .fa{
+            transform: translateY(-20px) scale(.5);
+        
+        }
+        .cont-sub :hover .text{
+            transform: translateY(-20px) ;
+            opacity: 1;
+        }
+        
